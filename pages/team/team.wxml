@@ -1,0 +1,12 @@
+<image class='background' src="../images/background2.jpg" mode="aspectFill"></image>
+
+<view class="block1">
+  <text class="title-font">软工实践作业——团队介绍界面</text>
+</view>
+
+<view class="block2">
+  <text class="name">王昊天 18074214
+张奥骆 18041105
+沈秉辰 18041117
+王淏博 17074209</text>
+</view>

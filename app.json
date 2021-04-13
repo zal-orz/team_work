@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/team/team",
+    "pages/zal/zal",
+    "pages/wht/wht",
+    "pages/sbc/sbc",
+    "pages/whb/whb"
+
+  ],
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "小组成员介绍",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/team/team",
+        "text": "team",
+        "iconPath": "pages/images/team.png",
+        "selectedIconPath": "pages/images/team1.png"
+      },
+      {
+        "pagePath": "pages/wht/wht",
+        "text": "wht",
+        "iconPath": "pages/images/me2.png",
+        "selectedIconPath": "pages/images/me3.png"
+      },
+      {
+        "pagePath": "pages/zal/zal",
+        "text": "zal",
+        "iconPath": "pages/images/me.png",
+        "selectedIconPath": "pages/images/me1.png"
+      },
+      {
+        "pagePath": "pages/sbc/sbc",
+        "text": "sbc",
+        "iconPath": "pages/images/me2.png",
+        "selectedIconPath": "pages/images/me3.png"
+      },
+      {
+        "pagePath": "pages/whb/whb",
+        "text": "whb",
+        "iconPath": "pages/images/me.png",
+        "selectedIconPath": "pages/images/me1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true
+}

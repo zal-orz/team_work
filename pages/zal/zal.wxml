@@ -1,0 +1,24 @@
+<image class='background' src="../images/background.jpg" mode="aspectFill"></image>
+
+<view class="head">
+  <h1>张奥骆</h1>
+</view>
+<view class="zwjs"> 
+  <h1>自我介绍</h1>
+  <image src="{{msg.img}}" style="width:150px;height:150px;"></image>
+  <view class="block1">
+    <text class="font1"> 学号：{{msg.number}}\n专业：{{msg.major}}
+    githubID：{{msg.github}}\n兴趣：{{msg.interest}}
+    </text>
+    <div class="clear-fix"></div>
+  </view>
+</view>
+
+<view class="container">
+  <view class="anima-font" animation="{{animationData}}">
+    <text class="anima-font">{{anima}}</text>
+  </view>
+  <button id="anima1" bindtap='click'>push me</button>
+  
+
+</view>
