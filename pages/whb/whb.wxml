@@ -5,7 +5,7 @@
 </view>
 <view class="zwjs"> 
   <h1>自我介绍</h1>
-  <image src="{{msg.img}}" style="width:150px;height:150px;"></image>
+  <image src="../images/whb.jpg" style="width:150px;height:150px;"></image>
   <view class="block1">
     <text class="font1"> 学号：{{msg.number}}\n专业：{{msg.major}}
     微信ID：{{msg.github}}\n兴趣：{{msg.interest}}

@@ -4,18 +4,14 @@ Page({
     anima:'张奥骆18041105'
   },
 onLoad:function () {
-  var msg = this.initData();
-  this.setData({ msg: msg });
-  },
-initData:function () {
-  var message = new Object();
-  message.img = '../images/zal.jpg';
-  message.title = '张奥骆';
-  message.number='18041105'
-  message.major = 'Computer Since';
-  message.github = 'zal-orz';
-  message.interest='游戏、动漫、游泳';
-  return message;
+  wx.cloud.database().collection('Student').doc('28ee4e3e609a745e17d13d8a48629d78').get()
+  .then(res=>{
+      console.log('成功',res);
+      this.setData({ msg: res.data });
+  })
+  .catch(err=>{
+      console.log('失败',err);
+  })
   },
 
   click:function(){

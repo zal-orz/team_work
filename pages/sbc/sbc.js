@@ -1,22 +1,16 @@
 Page({
   data:{
     msg:{},
-    anima:'沈秉辰18041117'
   },
 onLoad:function () {
-  var msg = this.initData();
-  this.setData({ msg: msg });
+  wx.cloud.database().collection('Student').doc('28ee4e3e609a757d17d1927b2749dba2').get()
+  .then(res=>{
+      console.log('成功',res);
+      this.setData({ msg: res.data });
+  })
+  .catch(err=>{
+      console.log('失败',err);
+  })
   },
-initData:function () {
-  var message = new Object();
-  message.img = '../images/sbc.jpg';
-  message.title = '沈秉辰';
-  message.number='18041117'
-  message.major = 'Computer Since';
-  message.github = 'shenbc';
-  message.interest='吃吃吃！';
-  return message;
-  },
-
 
 })

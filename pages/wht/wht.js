@@ -3,19 +3,14 @@ Page({
     msg:{},
   },
 onLoad:function () {
-  var msg = this.initData();
-  this.setData({ msg: msg });
+  wx.cloud.database().collection('Student').doc('b00064a7609a751f1696ae34331be04b').get()
+  .then(res=>{
+      console.log('成功',res);
+      this.setData({ msg: res.data });
+  })
+  .catch(err=>{
+      console.log('失败',err);
+  })
   },
-initData:function () {
-  var message = new Object();
-  message.img = '../images/wht.jpg';
-  message.title = '王昊天';
-  message.number='18074214'
-  message.major = 'Computer Since';
-  message.github = 'kira-sir';
-  message.interest='睡觉和摸鱼';
-  return message;
-  },
-
 
 })

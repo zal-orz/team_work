@@ -1,11 +1,11 @@
 <image class='background' src="../images/background4.jpg" mode="aspectFill"></image>
 
 <view class="head">
-  <h1>王昊天</h1>
+  <h1>{{msg.title}}</h1>
 </view>
 <view class="zwjs"> 
   <h1>自我介绍</h1>
-  <image src="{{msg.img}}" style="width:150px;height:150px;"></image>
+  <image src="../images/wht.jpg" style="width:150px;height:150px;"></image>
   <view class="block1">
     <text class="font1"> 学号：{{msg.number}}\n专业：{{msg.major}}
     githubID：{{msg.github}}\n兴趣：{{msg.interest}}

@@ -3,18 +3,14 @@ Page({
     msg:{},
   },
 onLoad:function () {
-  var msg = this.initData();
-  this.setData({ msg: msg });
-  },
-initData:function () {
-  var message = new Object();
-  message.img = '../images/whb.jpg';
-  message.title = '王淏博';
-  message.number='17074209'
-  message.major = 'Computer Since';
-  message.github = 'wanghaobo159';
-  message.interest='不明';
-  return message;
+  wx.cloud.database().collection('Student').doc('b00064a7609a75ce1696df3466037a99').get()
+  .then(res=>{
+      console.log('成功',res);
+      this.setData({ msg: res.data });
+  })
+  .catch(err=>{
+      console.log('失败',err);
+  })
   },
 
 })
